@@ -4,15 +4,15 @@
 
 ### Surge / Egern 模块
 
-https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyy.sgmodule
+https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyy.sgmodule
 
 ### Quantumult X 远程重写
 
-https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyy.quanx.conf
+https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyy.quanx.conf
 
 ### Loon 插件
 
-https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyy.lpx
+https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyy.lpx
 
 ### 其他平台（Stash / Shadowrocket 等）
 
@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyy.lpx
 
 ### BoxJS 订阅（三端通用配置面板）
 
-https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyy.boxjs.json
+https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyy.boxjs.json
 
 ## 致敬开源
 

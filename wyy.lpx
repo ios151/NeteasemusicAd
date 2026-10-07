@@ -1,11 +1,11 @@
 #!name=网易云音乐去广告
 #!desc=过滤网易云音乐广告，自定义底部/顶部 Tab
 #!openUrl=https://apps.apple.com/app/id590338362
-#!author=Yu9191[https://github.com/Yu9191]
+#!author=ios151[https://github.com/ios151]
 #!tag=去广告
 #!system=ios
 #!loon_version=3.2.4(787)
-#!homepage=https://github.com/Yu9191/NeteasemusicAd
+#!homepage=https://github.com/ios151/NeteasemusicAd
 #!icon=https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png
 #!date=2026-04-30 15:05:00
 
@@ -53,23 +53,23 @@ DOMAIN, iadmusicmat.music.126.net, REJECT
 DOMAIN, iadmusicmatvideo.music.126.net, REJECT
 
 [Script]
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/(batch|v\d\/resource\/comment\/floor\/get|v1\/user\/info) script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=通用 (评论区/广告/红点), argument=LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/(batch|v\d\/resource\/comment\/floor\/get|v1\/user\/info) script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=通用 (评论区/广告/红点), argument=LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/sp\/flow\/popup\/query script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=免流推广弹窗清空, argument=LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/sp\/flow\/popup\/query script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=免流推广弹窗清空, argument=LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/home\/framework\/tab script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=底部 Tab, argument=FX={FX}&MY={MY}&DT={DT}&GZ={GZ}&SOU={SOU}&SY_NAME={SY_NAME}&WD_NAME={WD_NAME}&MY_NAME={MY_NAME}&DT_NAME={DT_NAME}&FX_NAME={FX_NAME}&LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/home\/framework\/tab script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=底部 Tab, argument=FX={FX}&MY={MY}&DT={DT}&GZ={GZ}&SOU={SOU}&SY_NAME={SY_NAME}&WD_NAME={WD_NAME}&MY_NAME={MY_NAME}&DT_NAME={DT_NAME}&FX_NAME={FX_NAME}&LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/home\/framework\/top\/tab script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=顶部 Tab, argument=XD={XD}&BK={BK}&TS={TS}&HDTAB={HDTAB}&LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/home\/framework\/top\/tab script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=顶部 Tab, argument=XD={XD}&BK={BK}&TS={TS}&HDTAB={HDTAB}&LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/vipactivity\/app\/cashier\/setting\/get script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=收银台广告, argument=LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/vipactivity\/app\/cashier\/setting\/get script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=收银台广告, argument=LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/(homepage\/block\/page|link\/page\/rcmd\/(resource\/show|block\/resource\/multi\/refresh)) script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=首页推荐, argument=PRGG={PRGG}&PRDRD={PRDRD}&PRSCVPT={PRSCVPT}&PRST={PRST}&HMPR={HMPR}&PRRR={PRRR}&PRRK={PRRK}&PRMST={PRMST}&PRCN={PRCN}&PRPRS={PRPRS}&PRRSS={PRRSS}&LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/(homepage\/block\/page|link\/page\/rcmd\/(resource\/show|block\/resource\/multi\/refresh)) script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=首页推荐, argument=PRGG={PRGG}&PRDRD={PRDRD}&PRSCVPT={PRSCVPT}&PRST={PRST}&HMPR={HMPR}&PRRR={PRRR}&PRRK={PRRK}&PRMST={PRMST}&PRCN={PRCN}&PRPRS={PRPRS}&PRRSS={PRRSS}&LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/page\/discovery\/resource\/show script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=发现页, argument=LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/page\/discovery\/resource\/show script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=发现页, argument=LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/position\/show\/resource script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=我的页面广告, argument=LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/link\/position\/show\/resource script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=我的页面广告, argument=LogLevel={LogLevel}
 
-http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/user\/follow\/users\/mixed\/get script-path=https://raw.githubusercontent.com/Yu9191/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=显示未关注你的人, argument=LogLevel={LogLevel}
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/x?e?api\/user\/follow\/users\/mixed\/get script-path=https://raw.githubusercontent.com/ios151/NeteasemusicAd/main/wyyad.js, requires-body=true, binary-body-mode=true, timeout=20, tag=显示未关注你的人, argument=LogLevel={LogLevel}
 
 [MitM]
 hostname = ipv4.music.163.com, interface.music.163.com, interface*.music.163.com
